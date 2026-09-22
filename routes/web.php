@@ -45,8 +45,11 @@ Route::get('/dashboard', function () {
 // Application Routes
 Route::middleware('auth')->group(function () {
     Route::resource('departments', DepartmentController::class);
-    Route::resource('roles', \App\Http\Controllers\RoleController::class);
-    Route::resource('users', \App\Http\Controllers\UserController::class);
+
+    Route::middleware('can:admin')->group(function () {
+        Route::resource('roles', \App\Http\Controllers\RoleController::class);
+        Route::resource('users', \App\Http\Controllers\UserController::class);
+    });
 });
 
 // Logout
