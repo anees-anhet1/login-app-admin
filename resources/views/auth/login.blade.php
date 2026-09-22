@@ -14,21 +14,8 @@
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <div class="flex min-h-screen">
-        <!-- Left Side: Image/Branding -->
-        <div class="hidden lg:flex lg:w-1/2 relative bg-gray-900 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" alt="Abstract Background" class="absolute inset-0 h-full w-full object-cover opacity-60">
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div class="relative z-10 flex flex-col justify-end px-12 py-16 w-full">
-                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-8">
-                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                </div>
-                <h1 class="text-4xl font-bold text-white mb-4">Welcome back to the future of administration.</h1>
-                <p class="text-lg text-gray-300 max-w-lg">Manage your users, departments, and roles with our state-of-the-art dashboard built for scale.</p>
-            </div>
-        </div>
-
-        <!-- Right Side: Form -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-16 md:px-24 xl:px-32 relative">
+        <!-- Form Container -->
+        <div class="w-full flex flex-col justify-center px-8 sm:px-16 md:px-24 xl:px-32 relative">
             
             <div class="absolute top-8 right-8">
                 <span class="text-sm text-gray-500">Don't have an account?</span>

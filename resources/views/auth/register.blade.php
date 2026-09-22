@@ -14,21 +14,8 @@
 </head>
 <body class="bg-white text-gray-900 antialiased">
     <div class="flex min-h-screen">
-        <!-- Left Side: Image/Branding -->
-        <div class="hidden lg:flex lg:w-1/2 relative bg-gray-900 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2529&auto=format&fit=crop" alt="Abstract Background" class="absolute inset-0 h-full w-full object-cover opacity-60">
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div class="relative z-10 flex flex-col justify-end px-12 py-16 w-full">
-                <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-8">
-                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                </div>
-                <h1 class="text-4xl font-bold text-white mb-4">Join our platform today.</h1>
-                <p class="text-lg text-gray-300 max-w-lg">Get started in seconds and gain full control over your organization's permissions and structure.</p>
-            </div>
-        </div>
-
-        <!-- Right Side: Form -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-16 md:px-24 xl:px-32 relative py-12">
+        <!-- Form Container -->
+        <div class="w-full flex flex-col justify-center px-8 sm:px-16 md:px-24 xl:px-32 relative py-12">
             
             <div class="absolute top-8 right-8">
                 <span class="text-sm text-gray-500">Already have an account?</span>

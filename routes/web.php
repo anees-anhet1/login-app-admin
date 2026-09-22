@@ -32,21 +32,15 @@ Route::get('/dashboard', function () {
 
     $user = Auth::user();
 
-    $departments = Department::all();
-
-    return view('dashboard', compact(
-        'user',
-        'departments'
-    ));
+    return view('dashboard', compact('user'));
 
 })->middleware('auth')->name('dashboard');
 
 
 // Application Routes
 Route::middleware('auth')->group(function () {
-    Route::resource('departments', DepartmentController::class);
-
     Route::middleware('can:admin')->group(function () {
+        Route::resource('departments', DepartmentController::class);
         Route::resource('roles', \App\Http\Controllers\RoleController::class);
         Route::resource('users', \App\Http\Controllers\UserController::class);
     });
